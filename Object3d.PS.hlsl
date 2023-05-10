@@ -7,10 +7,9 @@ struct PixelShaderOutput {
 };
 PixelShaderOutput main() {
 	PixelShaderOutput output;
-	output.color = gMarareal.color;
+	output.color = gMaterial.color;
 	return output;
 }
-
 
 //struct PixelShaderOutput {
 //	float32_t4 color : SV_TARGET0;
@@ -21,9 +20,6 @@ PixelShaderOutput main() {
 //	output.color = float32_t4(1.0, 1.0, 1.0, 1.0);
 //	return output;
 //}
-
-
-
 
 //float4 main() : SV_TARGET
 //{
